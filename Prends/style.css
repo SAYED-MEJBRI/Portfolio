@@ -1,0 +1,224 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.containerPrends{
+    max-width: 1320px;
+    margin: auto;
+}
+/* En-tete*/
+header{
+    background-image: url(images/header_image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height:855px ;
+}
+.logoHeader{
+    width: 100px;
+    
+}
+.textHeader{
+    color: white;  
+    max-width: 50%;
+}
+/* section 1*/
+.section-one{
+    margin: 64px auto;
+}
+.iphone{
+    height: 120px;
+}
+.imgIphone{
+    top:-220%;
+}
+
+
+
+/* section 2*/
+.section-two {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    color: white;
+    margin: 64px auto;
+
+}
+.item{
+    padding: 32px;
+}
+.item:nth-child(1) {
+
+    background-color: #F7B1B5;
+
+}
+
+.item:nth-child(2) {
+
+    background-color: #625F7E;
+
+}
+
+.item:nth-child(3) {
+
+    background-image: url(images/photographer_neige.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+
+    width: 100%;
+}
+
+.item:nth-child(4) {
+    grid-column: span 2;
+    background-image: url(images/homme_dos_contre_soleil.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+   
+}
+
+.item:nth-child(5) {
+
+    background-color: #82CA9C;
+
+}
+.section-two a{
+
+    text-decoration: none;
+    color: white;
+}
+
+/* section three */
+.section-tree{
+    margin-bottom: 128px;
+}
+.sec3-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.coeur{
+    width: 30px;
+    right: 5%;
+    bottom: 10%;
+}
+/* section 4*/
+.section-four {
+    color: white;
+    min-height: 798px;
+    background-image: url(images/voiture_simone.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+   
+}
+
+.dimension {
+    max-width: 60%;
+    bottom: 0;
+ padding-bottom: 64px;
+}
+.dimension a{
+    text-decoration: none;
+    color: white;
+}
+
+.dimension h2 {
+    font-size: 88px;
+    font-weight: lighter;
+}
+/* section 5*/
+.section-five {
+    background-color: #82CA9C;
+    padding : 128px 16px;
+    color: white;
+}
+/*section 6*/
+.section-six{
+    padding : 128px 16px;
+}
+.section-six p{
+    color: #8DA1B0;
+}
+.icon{
+    width: 20px;
+}
+/*footer*/ 
+footer {
+    background-color: #182430;
+    padding : 128px 16px;
+    color: white;
+}
+.contact p{
+    color: #4D5F74;
+}
+.btn {
+    width: 135px;
+    height: 45px;
+    color: #fff;
+    background-color: #82ca9c;
+    border: none;
+    border-radius: 5%;
+    margin: 12px 0;
+}   
+.btn1 {
+    background-color: #e1e1e1;
+    width: 85px;
+    height: 35px;
+}
+
+.btn2 {
+    background-color: #bc8cbe;
+    width: 115px;
+    height: 35px;
+}
+
+input {
+    width: 100%;
+    margin: 32px 0;
+    height: 45px;
+    border: none;
+}
+
+.btnok {
+    width: 10%;
+    height: 50px;
+    right: 0;
+    top: 21%;       
+}
+.check{
+    width: 20px;
+}
+.btncheck{
+    width: 45px;
+    margin: 32px 0;
+}
+.top {
+  bottom: 0;
+  right: 0;
+}
+.g-2{
+    gap: 15%;
+}
+ul{
+    list-style-type: none;
+}
+li::before{
+    content: "♣""  ";
+}
+@media (max-width: 1168px) {
+    .iphone{
+      display: none;
+    }
+    h1, .dimension h2 {
+        font-size: 44px;
+        font-weight: lighter;
+    }
+    
+}
+@media (max-width: 900px) {
+   
+    .item {
+        grid-column: span 2;
+        
+    }
+    .textHeader, .dimension  {
+       max-width: 100%;
+    }
+}
